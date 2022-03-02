@@ -1,15 +1,12 @@
 package com.company;
 
+import java.util.*;
+
 public class Main {
 
     public static void main(String[] args) {
 	/*We Programmed A Zoo
-    --Create a new project named Zoo
-    --Create a class named Animal and Building and give each some basic properties
-    --Create several classes for specific types of animals in the Zoo
-    --These classes should extend the Animal class
-    --Each specific animal class should have several properties unique to that animal
-    --Create a new class that extends Building named AnimalEnclosure
+
     --AnimalEnclosure should have some properties including a list of Animals in the enclosure
     --Create new class that extends Building named GuestServices to represent the various restaurants, bathrooms,
       visitor centers, etc. available to zoo guests
@@ -22,7 +19,7 @@ public class Main {
     --Super Bonus: Create a menu option for zoo employees to add animals to enclosures and add services to guest
       service building
       */
-
+        
 
 
 
