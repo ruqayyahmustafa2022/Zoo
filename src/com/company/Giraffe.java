@@ -5,9 +5,25 @@ public class Giraffe extends Animal{
     private double neckLength;
     private double tallestHeight;
 
-    public Giraffe(double length, double height)
+    public double getNeckLength() {
+        return neckLength;
+    }
+
+    public double getTallestHeight() {
+        return tallestHeight;
+    }
+
+    public Giraffe(String name, int speed, String sex, int age, String genusClassification,
+                   boolean endangered, double length, double height)
     {
-        neckLength = length;
-        tallestHeight = height;
+        super(name, speed, sex, age, genusClassification, endangered);
+        this.neckLength = length;
+        this.tallestHeight = height;
     }//end Elephant constructor
+
+    @Override
+    public void Print() {
+        super.Print();
+
+    }
 }//end Giraffe

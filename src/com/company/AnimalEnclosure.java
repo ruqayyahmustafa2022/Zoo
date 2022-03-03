@@ -10,6 +10,22 @@ public class AnimalEnclosure extends Building {
     private String enclosureType; //house, cage, pit
     private boolean indoorOrOutdoor; //is the enclosure indoor or outdoor
 
+    public List<String> getZooAnimals() {
+        return zooAnimals;
+    }
+
+    public String getEnclosureSize() {
+        return enclosureSize;
+    }
+
+    public String getEnclosureType() {
+        return enclosureType;
+    }
+
+    public boolean isIndoorOrOutdoor() {
+        return indoorOrOutdoor;
+    }
+
     public void AnimalEnclosure(){
         zooAnimals = zooAnimals;
         enclosureSize = enclosureSize;

@@ -19,18 +19,39 @@ public class GuestServices extends Building {
     private List<String> guestServices;      //information booth, lost & found, stroller rentals ,
                                             // wheelchair rentals, sensory bag checkout, first responder
 
+
+    public String getConcessions() {
+        return concessions;
+    }
+
+    public String getRestrooms() {
+        return restrooms;
+    }
+
+    public String getLockers() {
+        return lockers;
+    }
+
+    public String getaTMs() {
+        return aTMs;
+    }
+
+    public List<String> getGuestServices() {
+        return guestServices;
+    }
+
     public GuestServices(){
-        concessions = "Zoofari Cafe";
-        restrooms = "Restroom";
-        lockers = "Lockers";
-        giftShops = "Gift Shop";
-        aTMs = "ATM";
-        guestServices.add(0, "Information booth");
-        guestServices.add(1, "Lost & Found");
-        guestServices.add(2, "Stroller Rentals");
-        guestServices.add(3, "Wheelchair Rentals");
-        guestServices.add(4, "Sensory Bag Checkout");
-        guestServices.add(5, "First Responder");
+        this.concessions = "Zoofari Cafe";
+        this.restrooms = "Restroom";
+        this.lockers = "Lockers";
+        this.giftShops = "Gift Shop";
+        this.aTMs = "ATM";
+        this.guestServices.add(0, "Information booth");
+        this.guestServices.add(1, "Lost & Found");
+        this.guestServices.add(2, "Stroller Rentals");
+        this.guestServices.add(3, "Wheelchair Rentals");
+        this.guestServices.add(4, "Sensory Bag Checkout");
+        this.guestServices.add(5, "First Responder");
 
 
     }//end GuestServices
