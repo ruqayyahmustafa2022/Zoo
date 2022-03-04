@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class GuestServices extends Building {
@@ -16,7 +17,7 @@ public class GuestServices extends Building {
     private String lockers;
     private String giftShops;
     private String aTMs;
-    private List<String> guestServices;      //information booth, lost & found, stroller rentals ,
+    private List<String> guestServices = new ArrayList<>();      //information booth, lost & found, stroller rentals ,
                                             // wheelchair rentals, sensory bag checkout, first responder
 
 
@@ -40,7 +41,7 @@ public class GuestServices extends Building {
         return guestServices;
     }
 
-    public GuestServices(){
+    public GuestServices() {
         this.concessions = "Zoofari Cafe";
         this.restrooms = "Restroom";
         this.lockers = "Lockers";
@@ -52,6 +53,21 @@ public class GuestServices extends Building {
         this.guestServices.add(3, "Wheelchair Rentals");
         this.guestServices.add(4, "Sensory Bag Checkout");
         this.guestServices.add(5, "First Responder");
+    }
+        public void PrintServices(){
+            System.out.println(
+                    "1. Zoofari Cafe \n" +
+                    "2. Restroom \n" +
+                    "3. Lockers \n" +
+                    "4. Gift Shop \n" +
+                    "5. ATM \n" +
+                    "6. Information booth \n" +
+                    "7. Lost & Found \n" +
+                    "8. Stroller Rentals\n" +
+                    "9. Wheelchair Rentals \n" +
+                    "10.Sensory Bag Checkout\n" +
+                    "11.First Responder\n");
+        }
 
 
     }//end GuestServices
@@ -59,4 +75,4 @@ public class GuestServices extends Building {
 
 
 
-}//end GuestServices
+

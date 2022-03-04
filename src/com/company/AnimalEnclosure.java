@@ -26,12 +26,18 @@ public class AnimalEnclosure extends Building {
         return indoorOrOutdoor;
     }
 
-    public void AnimalEnclosure(){
-        zooAnimals = zooAnimals;
-        enclosureSize = enclosureSize;
-        enclosureType = enclosureType;
-        indoorOrOutdoor = indoorOrOutdoor;
+    public void AnimalEnclosure(List<String> zooAnimals, String enclosureSize, String enclosureType,
+                                boolean indoorOrOutdoor){
+        this.zooAnimals = zooAnimals;
+        this.enclosureSize = enclosureSize;
+        this.enclosureType = enclosureType;
+        this.indoorOrOutdoor = indoorOrOutdoor;
     }//end animalEnclosure constructor
 
+    @Override
+    public void Print() {
+        super.Print();
+
+    }
 
 }//end AnimalEnclosure

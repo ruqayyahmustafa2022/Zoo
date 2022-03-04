@@ -5,6 +5,7 @@ import java.util.*;
 import java.io.File;
 import java.util.Scanner;
 
+
 public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
@@ -23,7 +24,7 @@ public class Main {
       service building
       */
 
-        File file = new File("/Users/ruqayyahmustafa/Documents/zooAnimals.txt");
+        File file = new File("/Users/ruqayyahmustafa/IdeaProjects/Zoo/src/com/company/zooAnimals");
         Scanner animalFile = new Scanner(file);
         Scanner usrInput = new Scanner(System.in);
         List<Animal> animalList = new ArrayList<Animal>();
@@ -54,8 +55,12 @@ public class Main {
 
         System.out.println("Welcome to the ZOO!");
 
-        //Print list of Guest services and enclosures and info about it
+        //TODO Print list of Guest services and enclosures and info about it
         System.out.println("Select a Menu Item:");
+        GuestServices menuList = new GuestServices();
+        menuList.PrintServices();
+
+
 
         //Bonus: Search for specific animal type and the enclosure
         System.out.println("Search for one of our Animals: ");

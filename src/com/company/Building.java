@@ -2,23 +2,20 @@ package com.company;
 
 public class Building {
     //Create basic properties of a Building
-    private int noOfStories;
+    private String location;
     private int sqFeet; //6000 is a good number
     private String foundation; //concrete or
     private int windowCount;
     private int doorCount;
 
-    public void setDoorCount(int doorCount) {
-        this.doorCount = doorCount;
+    public void setDoorCount(String location) {
+        this.location = location;
     }
 
     public void setFoundation(String foundation) {
         this.foundation = foundation;
     }
 
-    public void setNoOfStories(int noOfStories) {
-        this.noOfStories = noOfStories;
-    }
 
     public void setSqFeet(int sqFeet) {
         this.sqFeet = sqFeet;
@@ -32,9 +29,6 @@ public class Building {
         return doorCount;
     }
 
-    public int getNoOfStories() {
-        return noOfStories;
-    }
 
     public int getSqFeet() {
         return sqFeet;
@@ -48,5 +42,9 @@ public class Building {
         return foundation;
     }
 
-
+    public void Print(){
+        System.out.println( "**************************************" + '\n' +
+                "Location:" + location + '\n' +
+                "Square Footage: " +  sqFeet +'\n');
+    }//end Print
 }//end Building
