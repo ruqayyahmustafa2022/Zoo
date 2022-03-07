@@ -59,8 +59,9 @@ public class Main {
         System.out.println("Select a Menu Item:");
         GuestServices menuList = new GuestServices();
         menuList.PrintServices();
-        int answer = usrInput.nextInt();
-        menuList.getGuestServices();
+        String answer = usrInput.next();
+        //menuList.getGuestServices();
+        menuList.PrintInformation(answer);
 
 
 

@@ -1,7 +1,13 @@
 package com.company;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class GuestServices extends Building {
     /*Create new class that extends Building named GuestServices to represent the various restaurants, bathrooms,
@@ -67,6 +73,25 @@ public class GuestServices extends Building {
             }//for i
         }//end Print Guest Services
 
+    public void PrintInformation(String answer) throws FileNotFoundException {
+        File file = new File("/Users/ruqayyahmustafa/IdeaProjects/Zoo/src/com/company/guestServices");
+        Scanner guestServicesFile = new Scanner(file);
+        while(guestServicesFile.hasNext()){
+            String information1 = guestServicesFile.nextLine();
+            //System.out.println("Information 1: " + information1);
+            if(information1.contains(answer)) {
+                String strPattern = "\"[^\"]*\"";
+                Pattern pattern = Pattern.compile(strPattern);
+                Matcher matcher = pattern.matcher(information1);
+                //String information = information1.substring(information1.indexOf(" \" ")+1);
+                //String information = information1.replaceAll(".+\"", "");
+                while( matcher.find() ) {
+                    System.out.println("Information: " + matcher.group() );
+                }
+                //System.out.println("Information: " + information1);
+            }
+        }//end while file is open
+    }
 
     }//end GuestServices
 
