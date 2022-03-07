@@ -18,7 +18,7 @@ public class GuestServices extends Building {
     private String giftShops;
     private String aTMs;
     private List<String> guestServices = new ArrayList<>();      //information booth, lost & found, stroller rentals ,
-                                            // wheelchair rentals, sensory bag checkout, first responder
+    public int answer; // wheelchair rentals, sensory bag checkout, first responder
 
 
     public String getConcessions() {
@@ -42,32 +42,30 @@ public class GuestServices extends Building {
     }
 
     public GuestServices() {
-        this.concessions = "Zoofari Cafe";
-        this.restrooms = "Restroom";
-        this.lockers = "Lockers";
-        this.giftShops = "Gift Shop";
-        this.aTMs = "ATM";
-        this.guestServices.add(0, "Information booth");
-        this.guestServices.add(1, "Lost & Found");
-        this.guestServices.add(2, "Stroller Rentals");
-        this.guestServices.add(3, "Wheelchair Rentals");
-        this.guestServices.add(4, "Sensory Bag Checkout");
-        this.guestServices.add(5, "First Responder");
+        this.concessions = "1. Zoofari Cafe";
+        this.restrooms = "2. Restroom";
+        this.lockers = "3. Lockers";
+        this.giftShops = "4. Gift Shop";
+        this.aTMs = "5. ATM";
+        this.guestServices.add(0, "6. Information booth");
+        this.guestServices.add(1, "7. Lost & Found");
+        this.guestServices.add(2, "8. Stroller Rentals");
+        this.guestServices.add(3, "9. Wheelchair Rentals");
+        this.guestServices.add(4, "10. Sensory Bag Checkout");
+        this.guestServices.add(5, "11. First Responder");
     }
         public void PrintServices(){
+
             System.out.println(
-                    "1. Zoofari Cafe \n" +
-                    "2. Restroom \n" +
-                    "3. Lockers \n" +
-                    "4. Gift Shop \n" +
-                    "5. ATM \n" +
-                    "6. Information booth \n" +
-                    "7. Lost & Found \n" +
-                    "8. Stroller Rentals\n" +
-                    "9. Wheelchair Rentals \n" +
-                    "10.Sensory Bag Checkout\n" +
-                    "11.First Responder\n");
-        }
+                    concessions +  '\n' +
+                    restrooms + '\n' +
+                    lockers + '\n' +
+                    giftShops + '\n' +
+                    aTMs);
+            for(int i = 0; i< guestServices.size();i++) {
+                System.out.println(guestServices.get(i));
+            }//for i
+        }//end Print Guest Services
 
 
     }//end GuestServices
